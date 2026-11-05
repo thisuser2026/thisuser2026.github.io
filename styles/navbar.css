@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+.navbar {
+	display: flex;
+	width: 100%;
+	height: 80px;
+	z-index: 100;
+	position: fixed;
+	user-select: none;
+}
+
+.logo {
+	width: 69px;
+	height: 48px;
+	margin: auto;
+	margin-left: 16px;
+	margin-right: 16px;
+	user-select: none;
+}
+
+.navbar-page,
+.navbar-pageCurrent {
+	display: flex;
+	width: auto;
+	height: 56px;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	padding: 15px;
+	padding-right: 18px;
+	padding-left: 18px;
+	border-radius: 0.5rem;
+	opacity: 45%;
+	transition: opacity 0.05s ease-out, background-color 0.05s ease-out;
+}
+
+.navbar-pageCurrent {
+	pointer-events: none;
+    opacity: 100%;
+}
+
+.navbar-page:hover {
+	opacity: 100%;
+}
+
+.navbar-page > img,
+.navbar-pageCurrent > img {
+	width: 26px;
+	height: 26px;
+	filter: invert();
+}
+
+.navbar-page > span,
+.navbar-pageCurrent > span {
+	font-family: "Open Sans Semibold";
+	line-height: 26px;
+	margin-left: 13px;
+	opacity: 100%;
+	user-select: none;
+}
+
+#menuButton {
+	opacity: 60%;
+	display: none;
+	width: 50px;
+	height: 50px;
+	margin: auto;
+	margin-right: 12px;
+	cursor: pointer;
+	user-select: none;
+	transition: opacity 0.05s ease-out;
+}
+
+#menuButton:hover {
+	opacity: 100%;
+}
+
+#menuButton > img {
+	margin: auto;
+	user-select: none;
+	width: 32px;
+}
+
+.navbar-divider {
+	position: fixed;
+	top: 80px;
+	width: 100%;
+	height: 1px;
+}
+
+
+
+
+
+
+
+
+
+#menu {
+	width: 100%;
+	height: 0px;
+	top: 80px;
+	z-index: 50;
+	position: fixed;
+	overflow: hidden;
+	user-select: none;
+	transition: height 0.18s cubic-bezier(.17,.12,.37,.97);
+}
+
+.menu-page,
+.menu-pageCurrent {
+	display: flex;
+	padding: 18px;
+	height: 66px;
+	opacity: 40%;
+	transition: opacity 0.05s ease-out, background-color 0.05s ease-out;
+}
+
+.menu-pageCurrent {
+	pointer-events: none;
+    opacity: 100%;
+}
+
+.menu-page:hover {
+	opacity: 100%;
+}
+
+.menu-page > img,
+.menu-pageCurrent > img {
+	width: 30px;
+	height: 30px;
+	filter: invert();
+}
+
+.menu-page > span,
+.menu-pageCurrent > span {
+	font-family: "Open Sans Semibold";
+	line-height: 30px;
+	margin-left: 14px;
+	opacity: 100%;
+	user-select: none;
+}
+
+.menu-divider {
+	width: auto;
+	height: 1px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+
+/* ---------- Mobile view ---------- */
+
+@media (max-width: 762px) {
+	.navbar-page,
+	.navbar-pageCurrent {
+		display: none;
+	}
+
+	#menuButton {
+		display: flex;
+	}
+}

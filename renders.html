@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>thisuser2000</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Portfolio website for a user">
+		<link rel="stylesheet" href="styles/main.css">
+		<link rel="stylesheet" href="styles/navbar.css">
+		<link rel="stylesheet" href="styles/modal.css">
+		<link rel="stylesheet" href="styles/color.css">
+        <link rel="stylesheet" href="styles/display.css">
+		<link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    </head>
+    <body>
+
+		<nav class="navbar">
+			<img class="logo" src="assets/icons/thisuser.svg"/>
+			<a class="navbar-pageCurrent" href="renders.html">
+				<img src="assets/icons/renders.svg"/>
+				<span>Renders</span>
+			</a>
+			<a class="navbar-page" href="animations.html">
+				<img src="assets/icons/animations.svg"/>
+				<span>Animations</span>
+			</a>
+			<a class="navbar-page" href="software.html">
+				<img src="assets/icons/software.svg"/>
+				<span>Software</span>
+			</a>
+			<a class="navbar-page" href="writing.html">
+				<img src="assets/icons/writing.svg"/>
+				<span>Writing</span>
+			</a>
+			<div id="menuButton" onclick="toggleMenu()">
+				<img src="assets/icons/menu.svg"/>
+			</div>
+			<div class="navbar-divider"></div>
+        </nav>
+
+		<div id="menu">
+			<a class="menu-pageCurrent" href="renders.html">
+				<img src="assets/icons/renders.svg"/>
+				<span>Renders</span>
+			</a>
+			<div class="menu-divider"></div>
+			<a class="menu-page" href="animations.html">
+				<img src="assets/icons/animations.svg"/>
+				<span>Animations</span>
+			</a>
+			<div class="menu-divider"></div>
+			<a class="menu-page" href="software.html">
+				<img src="assets/icons/software.svg"/>
+				<span>Software</span>
+			</a>
+			<div class="menu-divider"></div>
+			<a class="menu-page" href="writing.html">
+				<img src="assets/icons/writing.svg"/>
+				<span>Writing</span>
+			</a>
+		</div>
+
+		<div id="content" onclick="hideMenu()">
+
+			<div class="banner" style="background-image: url('assets/images/banner.webp');">
+	            <div class="banner-gradient">
+					<div style="margin: auto;">
+						<p class="banner-title">Renders</p>
+						<p class="banner-subtitle">Tap on a card to learn more</p>
+					</div>
+	            </div>
+	        </div>
+
+
+			<!-- Characters -->
+			<section class="section-top">
+	            <div class="container">
+	                <p class="section-title">Characters</p>
+					<div class="divider"></div>
+					<div class="grid">
+
+						<div class="card"
+							data-project="chris"
+							data-bs-toggle="modal"
+							data-bs-target="#art-modal"
+							style="background-image:url('assets/images/renders/characters/chris/chris-1.webp')">
+
+							<div class="card-glare"></div>
+							<div class="card-gradient">
+								<p class="card-text">Chris</p>
+							</div>
+						</div>
+
+						<div class="card"
+							data-project="dylanV2"
+							data-bs-toggle="modal"
+							data-bs-target="#art-modal"
+							style="background-image:url('assets/images/renders/characters/dylanV2/dylanV2-1.webp')">
+
+							<div class="card-glare"></div>
+							<div class="card-gradient">
+								<p class="card-text">Dylan V2</p>
+							</div>
+						</div>
+
+						<div class="card"
+							data-project="dylanV1"
+							data-bs-toggle="modal"
+							data-bs-target="#art-modal"
+							style="background-image:url('assets/images/renders/characters/dylanV1/dylanV1-1.webp')">
+
+							<div class="card-glare"></div>
+							<div class="card-gradient">
+								<p class="card-text">Dylan V1</p>
+							</div>
+						</div>
+
+						<div class="card"
+							data-project="cyberthug"
+							data-bs-toggle="modal"
+							data-bs-target="#art-modal"
+							style="background-image:url('assets/images/renders/characters/cyberthug/cyberthug-1.webp')">
+
+							<div class="card-glare"></div>
+							<div class="card-gradient">
+								<p class="card-text">Cyberthug</p>
+							</div>
+						</div>
+
+	                </div>
+	            </div>
+	        </section>
+
+
+			<!-- Environments -->
+			<section>
+	            <div class="container">
+	                <p class="section-title">Environments</p>
+					<div class="divider"></div>
+					<div class="grid">
+
+						<div class="card"
+							data-project="panera"
+							data-bs-toggle="modal"
+							data-bs-target="#art-modal"
+							style="background-image:url('assets/images/renders/environments/panera/panera-1.webp');">
+
+							<div class="card-glare"></div>
+							<div class="card-gradient">
+								<p class="card-text">Panera Bread</p>
+							</div>
+						</div>
+
+						<div class="card"
+							data-project="bedroom"
+							data-bs-toggle="modal"
+							data-bs-target="#art-modal"
+							style="background-image:url('assets/images/renders/environments/bedroom/bedroom-1.webp')">
+
+							<div class="card-glare"></div>
+							<div class="card-gradient">
+								<p class="card-text">Bedroom</p>
+							</div>
+						</div>
+
+						<div class="card"
+							data-project="tepapa"
+							data-bs-toggle="modal"
+							data-bs-target="#art-modal"
+							style="background-image:url('assets/images/renders/environments/tepapa/tepapa-1.webp')">
+
+							<div class="card-glare"></div>
+							<div class="card-gradient">
+								<p class="card-text">Te Papa</p>
+							</div>
+						</div>
+
+						<div class="card"
+							data-project="jak"
+							data-bs-toggle="modal"
+							data-bs-target="#art-modal"
+							style="background-image:url('assets/images/renders/environments/jak/jak-1.webp')">
+
+							<div class="card-glare"></div>
+							<div class="card-gradient">
+								<p class="card-text">Unused Jak Level</p>
+							</div>
+						</div>
+
+						<div class="card"
+							data-project="war"
+							data-bs-toggle="modal"
+							data-bs-target="#art-modal"
+							style="background-image:url('assets/images/renders/environments/war/war-1.webp')">
+
+							<div class="card-glare"></div>
+							<div class="card-gradient">
+								<p class="card-text">War Memorial</p>
+							</div>
+						</div>
+
+						<div class="card"
+							data-project="steam"
+							data-bs-toggle="modal"
+							data-bs-target="#art-modal"
+							style="background-image:url('assets/images/renders/environments/steam/steam-1.webp')">
+
+							<div class="card-glare"></div>
+							<div class="card-gradient">
+								<p class="card-text">Steam Room</p>
+							</div>
+						</div>
+
+						<div class="card"
+							data-project="classroom"
+							data-bs-toggle="modal"
+							data-bs-target="#art-modal"
+							style="background-image:url('assets/images/renders/environments/classroom/classroom-1.webp')">
+
+							<div class="card-glare"></div>
+							<div class="card-gradient">
+								<p class="card-text">Classroom</p>
+							</div>
+						</div>
+
+						<div class="card"
+							data-project="victoria"
+							data-bs-toggle="modal"
+							data-bs-target="#art-modal"
+							style="background-image:url('assets/images/renders/environments/victoria/victoria-1.webp')">
+
+							<div class="card-glare"></div>
+							<div class="card-gradient">
+								<p class="card-text">Mount Victoria</p>
+							</div>
+						</div>
+
+	                </div>
+	            </div>
+	        </section>
+
+
+			<!-- Props -->
+			<section class="section-bottom">
+	            <div class="container">
+	                <p class="section-title">Props</p>
+					<div class="divider"></div>
+					<div class="gridProp">
+
+						<!-- <div class="cardProp disabled"
+							style="background-image:url('assets/images/renders/props/eye/eye-thumb.webp');">
+						</div>
+
+						<div class="cardProp"
+							style="background-image:url('assets/images/renders/props/milk/milk-1.webp')">
+						</div> -->
+
+						<div class="cardProp"
+							style="background-image:url('assets/images/renders/props/eye/eye-1.webp')">
+						</div>
+
+						<div class="cardProp"
+							style="background-image:url('assets/images/renders/props/eye/eye-1.webp')">
+						</div>
+
+						<div class="cardProp"
+							style="background-image:url('assets/images/renders/props/eye/eye-1.webp')">
+						</div>
+
+						<div class="cardProp"
+							style="background-image:url('assets/images/renders/props/eye/eye-1.webp')">
+						</div>
+
+						<div class="cardProp"
+							style="background-image:url('assets/images/renders/props/eye/eye-1.webp')">
+						</div>
+
+						<div class="cardProp"
+							style="background-image:url('assets/images/renders/props/eye/eye-1.webp')">
+						</div>
+
+						<div class="cardProp"
+							style="background-image:url('assets/images/renders/props/eye/eye-1.webp')">
+						</div>
+
+						<div class="cardProp"
+							style="background-image:url('assets/images/renders/props/eye/eye-1.webp')">
+						</div>
+
+	                </div>
+	            </div>
+	        </section>
+
+			<div class="footer">
+	            <p>&copy; 2026 thisuser2000. All rights reserved.</p>
+	        </div>
+
+		</div>
+
+		<div class="modal fade" id="art-modal" tabindex="-1">
+			<div class="modal-dialog standard-dialog">
+				<div class="modal-content">
+					<div class="modal-section1">
+						<h1 id="modal-title"></h1>
+						<h2 id="modal-date"></h2>
+						<div class="slideshow">
+							<img class="slideshow-feature" id="modal-image">
+							<div class="slideshow-overlay">
+								<div class="slideshow-left">
+									<img src="assets/icons/caret-left.svg"/>
+								</div>
+								<div class="slideshow-right">
+									<img src="assets/icons/caret-right.svg"/>
+								</div>
+							</div>
+							<div class="slideshow-counter">
+								<p class="slideshow-ID"></p>
+							</div>
+						</div>
+					</div>
+
+					<div class="modal-section2">
+						<h3>ABOUT THIS PIECE</h3>
+						<div class="modal-description" id="modal-description">
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<script src="scripts/bootstrap.bundle.min.js"></script>
+		<script src="scripts/preload.js"></script>
+		<script src="scripts/navbar.js"></script>
+		<script src="scripts/modal.js"></script>
+		<script src="scripts/project-data.js"></script>
+
+    </body>
+</html>

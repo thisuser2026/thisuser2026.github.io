@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>thisuser2000</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Portfolio website for a user">
+		<link rel="stylesheet" href="styles/main.css">
+		<link rel="stylesheet" href="styles/navbar.css">
+		<link rel="stylesheet" href="styles/modal.css">
+		<link rel="stylesheet" href="styles/color.css">
+        <link rel="stylesheet" href="styles/display.css">
+		<link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    </head>
+    <body>
+
+		<nav class="navbar">
+			<img class="logo" src="assets/icons/thisuser.svg"/>
+			<a class="navbar-page" href="renders.html">
+				<img src="assets/icons/renders.svg"/>
+				<span>Renders</span>
+			</a>
+			<a class="navbar-page" href="animations.html">
+				<img src="assets/icons/animations.svg"/>
+				<span>Animations</span>
+			</a>
+			<a class="navbar-page" href="software.html">
+				<img src="assets/icons/software.svg"/>
+				<span>Software</span>
+			</a>
+			<a class="navbar-pageCurrent" href="writing.html">
+				<img src="assets/icons/writing.svg"/>
+				<span>Writing</span>
+			</a>
+			<div id="menuButton" onclick="toggleMenu()">
+				<img src="assets/icons/menu.svg"/>
+			</div>
+			<div class="navbar-divider"></div>
+        </nav>
+
+		<div id="menu">
+			<a class="menu-page" href="renders.html">
+				<img src="assets/icons/renders.svg"/>
+				<span>Renders</span>
+			</a>
+			<div class="menu-divider"></div>
+			<a class="menu-page" href="animations.html">
+				<img src="assets/icons/animations.svg"/>
+				<span>Animations</span>
+			</a>
+			<div class="menu-divider"></div>
+			<a class="menu-page" href="software.html">
+				<img src="assets/icons/software.svg"/>
+				<span>Software</span>
+			</a>
+			<div class="menu-divider"></div>
+			<a class="menu-pageCurrent" href="writing.html">
+				<img src="assets/icons/writing.svg"/>
+				<span>Writing</span>
+			</a>
+		</div>
+
+		<div id="content" onclick="hideMenu()">
+
+			<div class="banner" style="background-image: url('assets/images/banner.webp');">
+	            <div class="banner-gradient">
+					<div style="margin: auto;">
+						<p class="banner-title">Writing</p>
+					</div>
+	            </div>
+	        </div>
+
+			<section class="section-top">
+	            <div class="container" style="max-width: 700px;">
+	                <p class="section-title">Articles</p>
+					<div class="divider"></div>
+					<div class="list">
+
+						<a href="articles/rigging-an-eye.html">
+							<div class="listItem">
+								<img src="assets/images/writing/eye.png" />
+								<div class="listItem-text">
+									<p class="listItem-title">Rigging an Eye</p>
+									<p class="listItem-subtitle">24 January 2026</p>
+								</div>
+							</div>
+						</a>
+
+	                </div>
+	            </div>
+	        </section>
+
+			<section class="section-bottom">
+	            <div class="container" style="max-width: 700px;">
+	                <p class="section-title">Workbooks</p>
+					<div class="divider"></div>
+					<div class="list">
+
+						<a href="workbooks/2022-sem2-majorProjects.pdf" target="_blank">
+							<div class="listItem">
+								<div class="listItemPDF">
+									<img src="assets/icons/pdf.svg" />
+								</div>
+								<div class="listItem-text">
+									<p class="listItem-title">Dylan V2</p>
+									<p class="listItem-subtitle">Semester 2, 2022</p>
+								</div>
+							</div>
+						</a>
+
+						<a href="workbooks/2022-sem1-majorProjects3.pdf" target="_blank">
+							<div class="listItem">
+								<div class="listItemPDF">
+									<img src="assets/icons/pdf.svg" />
+								</div>
+								<div class="listItem-text">
+									<p class="listItem-title">Major Projects Game (Part 3)</p>
+									<p class="listItem-subtitle">Semester 1, 2022</p>
+								</div>
+							</div>
+						</a>
+
+						<a href="workbooks/2022-sem1-majorProjects2.pdf" target="_blank">
+							<div class="listItem">
+								<div class="listItemPDF">
+									<img src="assets/icons/pdf.svg" />
+								</div>
+								<div class="listItem-text">
+									<p class="listItem-title">Major Projects Game (Part 2)</p>
+									<p class="listItem-subtitle">Semester 1, 2022</p>
+								</div>
+							</div>
+						</a>
+
+						<a href="workbooks/2022-sem1-majorProjects1.pdf" target="_blank">
+							<div class="listItem">
+								<div class="listItemPDF">
+									<img src="assets/icons/pdf.svg" />
+								</div>
+								<div class="listItem-text">
+									<p class="listItem-title">Major Projects Game (Part 1)</p>
+									<p class="listItem-subtitle">Semester 1, 2022</p>
+								</div>
+							</div>
+						</a>
+
+						<a href="workbooks/2022-sem1-appliedMedia.pdf" target="_blank">
+							<div class="listItem">
+								<div class="listItemPDF">
+									<img src="assets/icons/pdf.svg" />
+								</div>
+								<div class="listItem-text">
+									<p class="listItem-title">Photogrammetry, Mount Victoria and Dylan V1</p>
+									<p class="listItem-subtitle">Semester 1, 2022</p>
+								</div>
+							</div>
+						</a>
+
+	                </div>
+	            </div>
+	        </section>
+
+			<div class="footer">
+	            <p>&copy; 2026 thisuser2000. All rights reserved.</p>
+	        </div>
+
+		</div>
+
+		<script src="scripts/bootstrap.bundle.min.js"></script>
+		<script src="scripts/navbar.js"></script>
+
+    </body>
+</html>

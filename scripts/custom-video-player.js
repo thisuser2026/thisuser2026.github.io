@@ -1,9 +1,12 @@
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    const player = document.getElementById("player");
+	const player = document.getElementById("player");
+	const playerContainer = document.getElementById("video-container");
+    const controls = document.getElementById("controls");
     const video = document.getElementById("video");
     const play = document.getElementById("play");
+	const loop = document.getElementById("loop");
     const sound = document.getElementById("sound");
     const progress = document.getElementById("progress");
     const current = document.getElementById("current");
@@ -12,7 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     const playIMG = document.getElementById("play-img");
-    const soundIMG = document.getElementById("sound-img");
+	const soundIMG = document.getElementById("sound-img");
+    const loopIMG = document.getElementById("loop-img");
     const fullscreenIMG = document.getElementById("fullscreen-img");
 
     // Format seconds into minutes and seconds
@@ -43,11 +47,11 @@ document.addEventListener("DOMContentLoaded", () => {
 	});
 
     video.addEventListener("play", () => {
-        playIMG.src = "assets/icons/player/pause-fill.svg";
+        playIMG.src = "assets/icons/player/pause.svg";
     });
 
     video.addEventListener("pause", () => {
-        playIMG.src = "assets/icons/player/play-fill.svg";
+        playIMG.src = "assets/icons/player/play.svg";
     });
 
     // Update playback time and progress
@@ -73,10 +77,17 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // Mute / Unmute
+	// Mute / Unmute
     sound.addEventListener("click", () => {
         video.muted = !video.muted;
-        soundIMG.src = video.muted ? "assets/icons/player/volume-mute-fill.svg" : "assets/icons/player/volume-up-fill.svg";
+        soundIMG.src = video.muted ? "assets/icons/player/sound-off.svg" : "assets/icons/player/sound-on.svg";
+        soundIMG.style = video.muted ? "opacity: 0.33" : "opacity: 1.0";
+    });
+
+	// Mute / Unmute
+    loop.addEventListener("click", () => {
+        video.loop = !video.loop;
+        loopIMG.style = video.loop ? "opacity: 1.0" : "opacity: 0.33";
     });
 
     // Fullscreen
@@ -91,7 +102,11 @@ document.addEventListener("DOMContentLoaded", () => {
     // Update fullscreen button
     document.addEventListener("fullscreenchange", () => {
         fullscreenIMG.src =
-            document.fullscreenElement ? "assets/icons/player/fullscreen-exit.svg" : "assets/icons/player/fullscreen.svg";
+            document.fullscreenElement ? "assets/icons/player/fullscreen-exit.svg" : "assets/icons/player/fullscreen-enter.svg";
+        controls.style =
+            document.fullscreenElement ? "background: linear-gradient(to bottom, #00000000, #000000a0); position: absolute;" : "background-color: #333333; position: relative;";
+        videoContainer.style =
+            document.fullscreenElement ? "position: absolute;" : "position: relative;";
     });
 
 });

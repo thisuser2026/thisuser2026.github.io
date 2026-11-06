@@ -154,6 +154,7 @@ section {
 .listItem-subtitle {
 	opacity: 60%;
 	line-height: 1.4;
+	font-size: 0.9rem;
 }
 
 #content {

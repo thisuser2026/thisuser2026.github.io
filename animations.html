@@ -148,13 +148,13 @@
 								</div>
 							</div>
 							<div class="video-player" id="player" style="">
-								<div style="position: absolute; display: flex; width: 100%; height: 100%; align-items: center;">
+								<div id="video-container">
 									<video class="modal-video" id="video" preload="metadata">
 									</video>
 								</div>
-								<div class="controls">
+								<div id="controls">
 								    <button id="play">
-										<img id="play-img" src="assets/icons/player/play-fill.svg"/>
+										<img id="play-img" src="assets/icons/player/play.svg"/>
 									</button>
 
 								    <span id="current" style="margin-left: 16px;">0:00</span>
@@ -169,12 +169,16 @@
 
 								    <span id="duration" style="margin-right: 16px;">0:00</span>
 
+								    <button id="loop" style="margin-right: 8px;">
+										<img id="loop-img" src="assets/icons/player/repeat.svg" style="opacity: 0.33"/>
+									</button>
+
 								    <button id="sound" style="margin-right: 8px;">
-										<img id="sound-img" src="assets/icons/player/volume-up-fill.svg"/>
+										<img id="sound-img" src="assets/icons/player/sound-on.svg"/>
 									</button>
 
 								    <button id="fullscreen">
-										<img id="fullscreen-img" src="assets/icons/player/fullscreen.svg"/>
+										<img id="fullscreen-img" src="assets/icons/player/fullscreen-enter.svg"/>
 									</button>
 								</div>
 							</div>

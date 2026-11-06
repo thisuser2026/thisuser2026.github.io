@@ -33,7 +33,7 @@
 
 .modal {
 	overflow-x: scroll;
-	transition: opacity 0.35s var(--modal-cubic);
+	transition: opacity 0.23s var(--modal-cubic);
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -53,8 +53,8 @@
 	display: flex;
 	align-items: center;
 	padding: 10px;
-	transform: scale(0.8);
-	transition: all 0.35s, margin 0s, width 0s, height 0s, padding 0s;
+	transform: scale(0.93);
+	transition: all 0.23s, margin 0s, width 0s, height 0s, padding 0s;
 	transition-timing-function: var(--modal-cubic);
 	width: 1300px;
 	margin-top: calc(50vh - 360px);

@@ -278,7 +278,7 @@ section {
 	opacity: 0%;
 	border-radius: 9px;
 	background-size: cover;
-	background-image: url('../assets/images/glare.webp');
+	background-image: url('../assets/media/glare.webp');
 	transition: all 0.11s ease-out;
 	transition-timing-function: cubic-bezier(.17,.44,.4,1);
 }

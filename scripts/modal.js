@@ -5,6 +5,7 @@ const left    = modal.querySelector(".slideshow-left");
 const right   = modal.querySelector(".slideshow-right");
 const counter = modal.querySelector(".slideshow-counter");
 const counterText = modal.querySelector(".slideshow-ID");
+const video = modal.querySelector(".modal-video");
 
 const titleEl = modal.querySelector("#modal-title");
 const dateEl  = modal.querySelector("#modal-date");
@@ -21,6 +22,11 @@ function updateImage() {
 
 	left.style.visibility  = current === 1     ? "hidden" : "visible";
 	right.style.visibility = current === total ? "hidden" : "visible";
+}
+
+function updateVideo() {
+    video.src = `${base}.webm`;
+    video.load();
 }
 
 
@@ -77,6 +83,7 @@ modal.addEventListener("show.bs.modal", event => {
 	counter.style.visibility = visibility;
 
 	updateImage();
+	updateVideo();
 
 	for (let i = 1; i <= total; i++) {
 		const img = new Image();
@@ -87,4 +94,6 @@ modal.addEventListener("show.bs.modal", event => {
 
 modal.addEventListener("hidden.bs.modal", () => {
 	current = 1;
+    video.pause();
+    video.currentTime = 0;
 });

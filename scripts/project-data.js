@@ -4,7 +4,7 @@ const PROJECTS = {
 		date: "January 2023",
 
 		images: {
-			base: "assets/images/renders/characters/chris/chris",
+			base: "assets/media/renders/characters/chris/chris",
 			total: 5
 		},
 
@@ -25,7 +25,7 @@ const PROJECTS = {
 		date: "October 2022",
 
 		images: {
-			base: "assets/images/renders/characters/dylan2/dylan2",
+			base: "assets/media/renders/characters/dylan2/dylan2",
 			total: 6
 		},
 
@@ -46,7 +46,7 @@ const PROJECTS = {
 		date: "June 2022",
 
 		images: {
-			base: "assets/images/renders/characters/dylan1/dylan1",
+			base: "assets/media/renders/characters/dylan1/dylan1",
 			total: 4
 		},
 
@@ -63,7 +63,7 @@ const PROJECTS = {
 		date: "January 2022",
 
 		images: {
-			base: "assets/images/renders/characters/cyberthug/cyberthug",
+			base: "assets/media/renders/characters/cyberthug/cyberthug",
 			total: 6
 		},
 
@@ -80,7 +80,7 @@ const PROJECTS = {
 		date: "WORK IN PROGRESS",
 
 		images: {
-			base: "assets/images/renders/environments/panera/panera",
+			base: "assets/media/renders/environments/panera/panera",
 			total: 8
 		},
 
@@ -107,7 +107,7 @@ const PROJECTS = {
 		date: "WORK IN PROGRESS",
 
 		images: {
-			base: "assets/images/renders/environments/bedroom/bedroom",
+			base: "assets/media/renders/environments/bedroom/bedroom",
 			total: 3
 		},
 
@@ -124,7 +124,7 @@ const PROJECTS = {
 		date: "June 2026",
 
 		images: {
-			base: "assets/images/renders/environments/tepapa/tepapa",
+			base: "assets/media/renders/environments/tepapa/tepapa",
 			total: 4
 		},
 
@@ -151,7 +151,7 @@ const PROJECTS = {
 		date: "December 2025",
 
 		images: {
-			base: "assets/images/renders/environments/yosemite/yosemite",
+			base: "assets/media/renders/environments/yosemite/yosemite",
 			total: 4
 		},
 
@@ -170,7 +170,7 @@ const PROJECTS = {
 		date: "January 2025",
 
 		images: {
-			base: "assets/images/renders/environments/war/war",
+			base: "assets/media/renders/environments/war/war",
 			total: 3
 		},
 
@@ -193,7 +193,7 @@ const PROJECTS = {
 		date: "October 2022",
 
 		images: {
-			base: "assets/images/renders/environments/steam/steam",
+			base: "assets/media/renders/environments/steam/steam",
 			total: 2
 		},
 
@@ -212,7 +212,7 @@ const PROJECTS = {
 		date: "August 2022",
 
 		images: {
-			base: "assets/images/renders/environments/classroom/classroom",
+			base: "assets/media/renders/environments/classroom/classroom",
 			total: 5
 		},
 
@@ -231,7 +231,7 @@ const PROJECTS = {
 		date: "June 2022",
 
 		images: {
-			base: "assets/images/renders/environments/victoria/victoria",
+			base: "assets/media/renders/environments/victoria/victoria",
 			total: 5
 		},
 
@@ -250,7 +250,7 @@ const PROJECTS = {
 		date: "November 2026",
 
 		images: {
-			base: "assets/images/renders/props/samsung/samsung",
+			base: "assets/media/renders/props/samsung/samsung",
 			total: 1
 		},
 
@@ -267,7 +267,7 @@ const PROJECTS = {
 		date: "February 2026",
 
 		images: {
-			base: "assets/images/renders/props/eye/eye",
+			base: "assets/media/renders/props/eye/eye",
 			total: 1
 		},
 
@@ -284,7 +284,7 @@ const PROJECTS = {
 		date: "December 2025",
 
 		images: {
-			base: "assets/images/renders/props/bedbug/bedbug",
+			base: "assets/media/renders/props/bedbug/bedbug",
 			total: 1
 		},
 
@@ -301,7 +301,7 @@ const PROJECTS = {
 		date: "August 2023",
 
 		images: {
-			base: "assets/images/renders/props/milk/milk",
+			base: "assets/media/renders/props/milk/milk",
 			total: 4
 		},
 
@@ -320,7 +320,7 @@ const PROJECTS = {
 		date: "October 2022",
 
 		images: {
-			base: "assets/images/renders/props/lego/lego",
+			base: "assets/media/renders/props/lego/lego",
 			total: 3
 		},
 
@@ -337,7 +337,7 @@ const PROJECTS = {
 		date: "November 2026",
 
 		images: {
-			base: "assets/images/animations/hold/hold",
+			base: "assets/media/animations/hold/hold",
 			total: 1
 		},
 
@@ -354,7 +354,7 @@ const PROJECTS = {
 		date: "April 2022",
 
 		images: {
-			base: "assets/images/animations/sole/sole",
+			base: "assets/media/animations/sole/sole",
 			total: 3
 		},
 
@@ -375,7 +375,7 @@ const PROJECTS = {
 		date: "December 2017",
 
 		images: {
-			base: "assets/images/animations/party/party",
+			base: "assets/media/animations/party/party",
 			total: 1
 		},
 
@@ -392,7 +392,7 @@ const PROJECTS = {
 		date: "WORK IN PROGRESS",
 
 		images: {
-			base: "assets/images/software/money/money",
+			base: "assets/media/software/money/money",
 			total: 1
 		},
 
@@ -409,7 +409,7 @@ const PROJECTS = {
 		date: "May 2020",
 
 		images: {
-			base: "assets/images/software/whitireia/whitireia",
+			base: "assets/media/software/whitireia/whitireia",
 			total: 3
 		},
 
@@ -432,7 +432,7 @@ const PROJECTS = {
 		date: "February 2017",
 
 		images: {
-			base: "assets/images/software/yoobee/yoobee",
+			base: "assets/media/software/yoobee/yoobee",
 			total: 3
 		},
 
@@ -455,7 +455,7 @@ const PROJECTS = {
 		date: "June 2022",
 
 		images: {
-			base: "assets/images/software/game/game",
+			base: "assets/media/software/game/game",
 			total: 8
 		},
 
@@ -482,7 +482,7 @@ const PROJECTS = {
 		date: "January 2019",
 
 		images: {
-			base: "assets/images/software/petscop/petscop",
+			base: "assets/media/software/petscop/petscop",
 			total: 4
 		},
 

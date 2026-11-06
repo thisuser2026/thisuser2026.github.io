@@ -1,0 +1,97 @@
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const player = document.getElementById("player");
+    const video = document.getElementById("video");
+    const play = document.getElementById("play");
+    const sound = document.getElementById("sound");
+    const progress = document.getElementById("progress");
+    const current = document.getElementById("current");
+    const duration = document.getElementById("duration");
+    const fullscreen = document.getElementById("fullscreen");
+
+
+    const playIMG = document.getElementById("play-img");
+    const soundIMG = document.getElementById("sound-img");
+    const fullscreenIMG = document.getElementById("fullscreen-img");
+
+    // Format seconds into minutes and seconds
+    function formatTime(seconds) {
+        if (!Number.isFinite(seconds)) return "0:00";
+
+        const mins = Math.floor(seconds / 60);
+        const secs = Math.floor(seconds % 60);
+
+        return `${mins}:${String(secs).padStart(2, "0")}`;
+    }
+
+    // Play / Pause
+    play.addEventListener("click", () => {
+        if (video.paused) {
+            video.play();
+        } else {
+            video.pause();
+        }
+    });
+
+	video.addEventListener("click", () => {
+	    if (video.paused) {
+	        video.play();
+	    } else {
+	        video.pause();
+	    }
+	});
+
+    video.addEventListener("play", () => {
+        playIMG.src = "assets/icons/player/pause-fill.svg";
+    });
+
+    video.addEventListener("pause", () => {
+        playIMG.src = "assets/icons/player/play-fill.svg";
+    });
+
+    // Update playback time and progress
+    video.addEventListener("timeupdate", () => {
+        current.textContent = formatTime(video.currentTime);
+
+        if (video.duration) {
+            progress.value =
+                (video.currentTime / video.duration) * 100;
+        }
+    });
+
+    // Load duration
+    video.addEventListener("loadedmetadata", () => {
+        duration.textContent = formatTime(video.duration);
+    });
+
+    // Seek through video
+    progress.addEventListener("input", () => {
+        if (video.duration) {
+            video.currentTime =
+                (progress.value / 100) * video.duration;
+        }
+    });
+
+    // Mute / Unmute
+    sound.addEventListener("click", () => {
+        video.muted = !video.muted;
+        soundIMG.src = video.muted ? "assets/icons/player/volume-mute-fill.svg" : "assets/icons/player/volume-up-fill.svg";
+    });
+
+    // Fullscreen
+    fullscreen.addEventListener("click", () => {
+        if (!document.fullscreenElement) {
+            player.requestFullscreen();
+        } else {
+            document.exitFullscreen();
+        }
+    });
+
+    // Update fullscreen button
+    document.addEventListener("fullscreenchange", () => {
+        fullscreenIMG.src =
+            document.fullscreenElement ? "assets/icons/player/fullscreen-exit.svg" : "assets/icons/player/fullscreen.svg";
+    });
+
+});

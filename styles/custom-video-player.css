@@ -1,0 +1,54 @@
+.video-player {
+	position: relative;
+	width: 100%;
+	aspect-ratio: 3/2;
+	background: #000;
+	overflow: hidden;
+	color: white;
+	display: flex;
+}
+
+.video-player video {
+	display: flex;
+	width: 100%;
+}
+
+.controls {
+	display: flex;
+	position: absolute;
+	width: 100%;
+	align-items: center;
+	padding: 8px;
+	bottom: 0px;
+	background: linear-gradient(to bottom, #00000000, #00000080);
+}
+
+.controls img {
+	width: 32px;
+	height: 32px;
+	margin: auto;
+	filter: invert();
+}
+
+.controls button {
+	display: flex;
+	border: none;
+	background-color: #ffffff00;
+	border-radius: 100px;
+	width: 40px;
+	height: 40px;
+	color: white;
+	cursor: pointer;
+	font-size: 18px;
+}
+
+.controls button:hover {
+	background-color: #ffffff80;
+}
+
+.controls input {
+	flex: 1;
+	margin-left: 12px;
+	margin-right: 12px;
+	accent-color: red;
+}

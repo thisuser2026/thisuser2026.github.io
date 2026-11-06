@@ -23,13 +23,18 @@
 }
 
 #controls {
-	position: relative;
+	position: sticky;
 	display: flex;
 	width: 100%;
 	align-items: center;
 	padding: 8px;
+	padding-top: 11px;
 	bottom: 0px;
-	background-color: #333333;
+	background: linear-gradient(to bottom,
+		#101010 0px,
+		#101010 3px,
+		#333333 3.1px
+	);
 }
 
 #controls img {
@@ -60,5 +65,6 @@
 	flex: 1;
 	margin-left: 12px;
 	margin-right: 12px;
+	width: 100%;
 	accent-color: #526998;
 }

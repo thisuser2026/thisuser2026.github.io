@@ -1,5 +1,4 @@
 const PROJECTS = {
-	// Characters
 	chris: {
 		title: "Chris",
 		date: "January 2023",
@@ -21,12 +20,12 @@ const PROJECTS = {
 		downloads: []
 	},
 
-	dylanV2: {
+	dylan2: {
 		title: "Dylan V2",
 		date: "October 2022",
 
 		images: {
-			base: "assets/images/renders/characters/dylanV2/dylanV2",
+			base: "assets/images/renders/characters/dylan2/dylan2",
 			total: 6
 		},
 
@@ -42,12 +41,12 @@ const PROJECTS = {
 		downloads: []
 	},
 
-	dylanV1: {
+	dylan1: {
 		title: "Dylan V1",
 		date: "June 2022",
 
 		images: {
-			base: "assets/images/renders/characters/dylanV1/dylanV1",
+			base: "assets/images/renders/characters/dylan1/dylan1",
 			total: 4
 		},
 
@@ -82,7 +81,7 @@ const PROJECTS = {
 
 		images: {
 			base: "assets/images/renders/environments/panera/panera",
-			total: 7
+			total: 8
 		},
 
 		description: `
@@ -120,8 +119,6 @@ const PROJECTS = {
 		downloads: []
 	},
 
-
-	// Environments
 	tepapa: {
 		title: "Te Papa",
 		date: "June 2026",
@@ -149,12 +146,12 @@ const PROJECTS = {
 		]
 	},
 
-	jak: {
+	yosemite: {
 		title: "Unused Jak Level",
 		date: "December 2025",
 
 		images: {
-			base: "assets/images/renders/environments/jak/jak",
+			base: "assets/images/renders/environments/yosemite/yosemite",
 			total: 4
 		},
 
@@ -182,7 +179,13 @@ const PROJECTS = {
 			<br><br>
 		`,
 
-		downloads: []
+		downloads: [
+			{
+				icon: "maps",
+				text: "View reference location",
+				href: "https://www.google.com/maps/place/Pukeahu+National+War+Memorial+Park/@-41.2995094,174.7765884,1099m/data=!3m1!1e3!4m14!1m7!3m6!1s0x6d38afd1ad98169d:0x9a409ffce82d9a30!2sMuseum+of+New+Zealand+Te+Papa+Tongarewa!8m2!3d-41.2904563!4d174.7820894!16zL20vMDRrMGtr!3m5!1s0x6d38afdeb46e493d:0xd76943a16dfa8f56!8m2!3d-41.298909!4d174.7771493!16s%2Fg%2F11b6t85p8j?entry=ttu&g_ep=EgoyMDI2MTEwMi4wIKXMDSoASAFQAw%3D%3D"
+			}
+		]
 	},
 
 	steam: {
@@ -201,13 +204,7 @@ const PROJECTS = {
 			<br><br>
 		`,
 
-		downloads: [
-			{
-				icon: "maya",
-				text: "Download project files",
-				href: "files/steamroom.zip"
-			}
-		]
+		downloads: []
 	},
 
 	classroom: {
@@ -248,11 +245,26 @@ const PROJECTS = {
 		downloads: []
 	},
 
+	samsung: {
+		title: "Samsung SSD",
+		date: "November 2026",
 
-	// Props
+		images: {
+			base: "assets/images/renders/props/samsung/samsung",
+			total: 1
+		},
+
+		description: `
+			Description coming soon.
+			<br><br>
+		`,
+
+		downloads: []
+	},
+
 	eye: {
-		title: "Eye Rig",
-		date: "WORK IN PROGRESS",
+		title: "Eye",
+		date: "February 2026",
 
 		images: {
 			base: "assets/images/renders/props/eye/eye",
@@ -260,9 +272,24 @@ const PROJECTS = {
 		},
 
 		description: `
-			This project stemmed from a desire to create an eyeball with an iris that constricts and dilates while maintaining its spherical shape, something that the traditional blendshape method doesn't allow. There are also settings for pupil control, artistic glint, glint size and sharpness. Multiple textures are included covering the basic eye colours.
+			Description coming soon.
 			<br><br>
-			Feel free to use it in your own character rigs and be sure to connect your aim targets to the provided hook node.
+		`,
+
+		downloads: []
+	},
+
+	bedbug: {
+		title: "Bed Bug Jug",
+		date: "December 2025",
+
+		images: {
+			base: "assets/images/renders/props/bedbug/bedbug",
+			total: 1
+		},
+
+		description: `
+			Description coming soon.
 			<br><br>
 		`,
 
@@ -285,13 +312,7 @@ const PROJECTS = {
 			<br><br>
 		`,
 
-		downloads: [
-			{
-				icon: "maya",
-				text: "Download project files",
-				href: "files/chocolatemilk.zip"
-			}
-		]
+		downloads: []
 	},
 
 	lego: {
@@ -308,13 +329,24 @@ const PROJECTS = {
 			<br><br>
 		`,
 
-		downloads: [
-			{
-				icon: "maya",
-				text: "Download project files",
-				href: "files/harrypotter.zip"
-			}
-		]
+		downloads: []
+	},
+
+	hold: {
+		title: "Moving Hold",
+		date: "November 2026",
+
+		images: {
+			base: "assets/images/animations/hold/hold",
+			total: 1
+		},
+
+		description: `
+			Description coming soon.
+			<br><br>
+		`,
+
+		downloads: []
 	},
 
 	sole: {
@@ -327,46 +359,15 @@ const PROJECTS = {
 		},
 
 		description: `
-		While learning photogrammetry, I took several photos of Dylan but didn't tell him what I planned to do with them.
-		<br><br>
-		I brought the images into RealityCapture, then unwrapped the texture and applied it to the Dylan V1 model. After some basic facial rigging involving blendshapes, I synced this animation to a voice clip and showed the result to the class.
-		<br><br>
-		The resemblance was incredible, but I don't think this model was blushing enough.
-		<br><br>
+			While learning photogrammetry, I took several photos of Dylan but didn't tell him what I planned to do with them.
+			<br><br>
+			I brought the images into RealityCapture, then unwrapped the texture and applied it to the Dylan V1 model. After some basic facial rigging involving blendshapes, I synced this animation to a voice clip and showed the result to the class.
+			<br><br>
+			The resemblance was incredible, but I don't think this model was blushing enough.
+			<br><br>
 		`,
 
-		downloads: [
-			{
-				icon: "youtube",
-				text: "Watch on YouTube",
-				href: "NULL"
-			}
-		]
-	},
-
-	loops: {
-		title: "Thematic Loops",
-		date: "November 2021",
-
-		images: {
-			base: "assets/images/animations/loops/loops",
-			total: 1
-		},
-
-		description: `
-		This project involved creating a series of nine looping animations that share a relaxing theme. The assets were created in Adobe Illustrator, then manipulated in After Effects.
-		<br><br>
-		The assignment emphasised the importance of iteration, with draft animations being required for submission first, before moving onto refined versions later.
-		<br><br>
-		`,
-
-		downloads: [
-			{
-				icon: "youtube",
-				text: "Watch on YouTube",
-				href: "NULL"
-			}
-		]
+		downloads: []
 	},
 
 	party: {
@@ -383,44 +384,15 @@ const PROJECTS = {
 			<br><br>
 		`,
 
-		downloads: [
-			{
-				icon: "youtube",
-				text: "Watch on YouTube",
-				href: "NULL"
-			}
-		]
+		downloads: []
 	},
 
-	toilet: {
-		title: "The Toilet Thing",
-		date: "July 2017",
+	money: {
+		title: "Pocketwatcher",
+		date: "WORK IN PROGRESS",
 
 		images: {
-			base: "assets/images/animations/toilet/toilet",
-			total: 1
-		},
-
-		description: `
-			This assignment involved animating a blob character with limited features to a short voice clip. Given that the character doesn't have a mouth, the focus was on eye movements and body language to communicate the same idea.
-			<br><br>
-		`,
-
-		downloads: [
-			{
-				icon: "youtube",
-				text: "Watch on YouTube",
-				href: "NULL"
-			}
-		]
-	},
-
-	pocketwatcher: {
-		title: "PocketWatcher",
-		date: "May 2020",
-
-		images: {
-			base: "assets/images/software/pocketwatcher/pocketwatcher",
+			base: "assets/images/software/money/money",
 			total: 1
 		},
 
@@ -429,45 +401,7 @@ const PROJECTS = {
 			<br><br>
 		`,
 
-		downloads: [
-			{
-				icon: "android",
-				text: "Download for Android",
-				href: "files/whitireia-assistant.apk"
-			}
-		]
-	},
-
-	game: {
-		title: "Major Projects Game",
-		date: "June 2022",
-
-		images: {
-			base: "assets/images/software/game/game",
-			total: 8
-		},
-
-		description: `
-			My major project for semester 1 was a video game and console reminiscent of the Nintendo DS. The game was designed as an exploration experience, featuring virtual exhibits of my work. For example, photography work would appear in a gallery, while the Cyberthug Core would be life-sized with ambient sound and lighting.
-			<br><br>
-			I aimed for a retro visual style, creating lighting and shadows manually with soft brushes and gradients rather than relying on modern pre-baked or real-time lighting systems.
-			<br><br>
-			I had planned to build the console using a Raspberry Pi, combining laser cutting and 3D printing for the casing. The operating system would be a stripped-down version of Ubuntu with a custom desktop environment, however poor planning and high ambitions meant the project was left half-finished.
-			<br><br>
-		`,
-
-		downloads: [
-			{
-				icon: "windows",
-				text: "Download for Windows",
-				href: "files/majorprojects-windows.zip"
-			},
-			{
-				icon: "unity",
-				text: "Unity project files",
-				href: "files/null.zip"
-			}
-		]
+		downloads: []
 	},
 
 	whitireia: {
@@ -489,29 +423,6 @@ const PROJECTS = {
 				icon: "android",
 				text: "Download for Android",
 				href: "files/whitireia-assistant.apk"
-			}
-		]
-	},
-
-	petscop: {
-		title: "Petscop Classic",
-		date: "January 2019",
-
-		images: {
-			base: "assets/images/software/petscop/petscop",
-			total: 4
-		},
-
-		description: `
-			This Unity game is a partial remake of the cryptic webseries Petscop, specifically the scenes involving the house and kidnapping. Refer to episode 11 if you're not sure how to progress.
-			<br><br>
-		`,
-
-		downloads: [
-			{
-				icon: "android",
-				text: "Download for Android",
-				href: "files/petscop-classic.apk"
 			}
 		]
 	},
@@ -539,32 +450,52 @@ const PROJECTS = {
 		]
 	},
 
-	finaldrives: {
-		title: "NZ Final Drives",
-		date: "October 2023",
+	game: {
+		title: "Major Projects Game",
+		date: "June 2022",
 
 		images: {
-			base: "assets/images/software/finaldrives/finaldrives",
-			total: 3
+			base: "assets/images/software/game/game",
+			total: 8
 		},
 
 		description: `
-			This was a freelance job that involved improving SEO visibility, performance and user-friendliness of NZ Final Drives' website. I noticed the old one contained a lot of redundant information, such as the presence of a contact form right next to the company's phone numbers and email address.
+			My major project for semester 1 was a video game and console reminiscent of the Nintendo DS. The game was designed as an exploration experience, featuring virtual exhibits of my work. For example, photography work would appear in a gallery, while the Cyberthug Core would be life-sized with ambient sound and lighting.
 			<br><br>
-			The old website featured a products page where customers could search for parts, but ultimately everything lead to contacting the company for quotes. I figured it was appropriate to streamline everything to a single page, with the product finder moved to a dialog at the top of the page.
+			I aimed for a retro visual style, creating lighting and shadows manually with soft brushes and gradients rather than relying on modern pre-baked or real-time lighting systems.
+			<br><br>
+			I had planned to build the console using a Raspberry Pi, combining laser cutting and 3D printing for the casing. The operating system would be a stripped-down version of Ubuntu with a custom desktop environment, however poor planning and high ambitions meant the project was left half-finished.
 			<br><br>
 		`,
 
 		downloads: [
 			{
-				icon: "website",
-				text: "Visit new website",
-				href: "https://nzfinaldrives1101.github.io/"
-			},
+				icon: "windows",
+				text: "Download for Windows",
+				href: "files/majorprojects-windows.zip"
+			}
+		]
+	},
+
+	petscop: {
+		title: "Petscop Classic",
+		date: "January 2019",
+
+		images: {
+			base: "assets/images/software/petscop/petscop",
+			total: 4
+		},
+
+		description: `
+			This Unity game is a partial remake of the cryptic webseries Petscop, specifically the scenes involving the house and kidnapping. Refer to episode 11 if you're not sure how to progress.
+			<br><br>
+		`,
+
+		downloads: [
 			{
-				icon: "website",
-				text: "Visit old website",
-				href: "https://nzfinaldrives.co.nz/"
+				icon: "android",
+				text: "Download for Android",
+				href: "files/petscop-classic.apk"
 			}
 		]
 	}

@@ -1,0 +1,34 @@
+chris		Chris
+dylan2		Dylan V2
+dylan1		Dylan V1
+cyberthug	Cyberthug
+
+panera		Panera Bread
+bedroom		Bedroom
+tepapa		Te Papa
+yosemite	Unused Jak Level
+war		War Memorial
+steam		Steam Room
+classroom	Classroom
+victoria	Mount Victoria
+
+samsung		Samsung SSD
+eye		Eye
+bedbug		Bed Bug Jug
+milk		Chocolate Milk
+lego		LEGO Harry Potter
+
+------------------------------
+
+hold		Moving Hold
+sole		My Name is Sole Letafu
+party		The Party Room
+
+------------------------------
+
+money		Pocketwatcher
+whitireia	Whitireia Assistant
+yoobee		Yoobee Timetable
+
+game		Major Projects Game
+petscop		Petscop Classic

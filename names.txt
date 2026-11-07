@@ -16,7 +16,6 @@ samsung		Samsung SSD
 eye		Eye
 bedbug		Bed Bug Jug
 milk		Chocolate Milk
-lego		LEGO Harry Potter
 
 ------------------------------
 

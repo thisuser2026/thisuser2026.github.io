@@ -302,30 +302,13 @@ const PROJECTS = {
 
 		images: {
 			base: "assets/media/renders/props/milk/milk",
-			total: 4
+			total: 1
 		},
 
 		description: `
 			This simple prop was made in just 2 hours. It was an experiment in fine-tuning specular and subsurface settings to match how it would look in the real world. If you look closely you can see the bottom of the lid is darker than the top, as it is covering the bottle and allowing less light to pass through.
 			<br><br>
 			One issue I discovered later was that the poor placement of edge loops to support the raised squares led to inconsistent shading, resulting in the cylindrical shape looking more like a rounded octagon.
-			<br><br>
-		`,
-
-		downloads: []
-	},
-
-	lego: {
-		title: "LEGO Harry Potter",
-		date: "October 2022",
-
-		images: {
-			base: "assets/media/renders/props/lego/lego",
-			total: 3
-		},
-
-		description: `
-			This project involved recreating specific LEGO pieces from a chosen set, then fitting them together as you would in real life. I experimented with compositing it over a photo I took, taking into consideration light sources, viewing angles and depth-of-field.
 			<br><br>
 		`,
 

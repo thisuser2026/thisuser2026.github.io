@@ -103,10 +103,6 @@ document.addEventListener("DOMContentLoaded", () => {
     document.addEventListener("fullscreenchange", () => {
         fullscreenIMG.src =
             document.fullscreenElement ? "assets/icons/player/fullscreen-exit.svg" : "assets/icons/player/fullscreen-enter.svg";
-        controls.style =
-            document.fullscreenElement ? "background: linear-gradient(to bottom, #00000000, #000000a0); position: absolute;" : "background-color: #333333; position: relative;";
-        videoContainer.style =
-            document.fullscreenElement ? "position: absolute;" : "position: relative;";
     });
 
 });

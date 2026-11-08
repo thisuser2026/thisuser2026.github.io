@@ -433,6 +433,23 @@ const PROJECTS = {
 		]
 	},
 
+	liminal: {
+		title: "Liminal",
+		date: "WORK IN PROGRESS",
+
+		images: {
+			base: "assets/media/software/liminal/liminal",
+			total: 1
+		},
+
+		description: `
+			Description coming soon.
+			<br><br>
+		`,
+
+		downloads: []
+	},
+
 	game: {
 		title: "Major Projects Game",
 		date: "June 2022",

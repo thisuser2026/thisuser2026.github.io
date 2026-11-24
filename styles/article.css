@@ -151,13 +151,12 @@ body {
 }
 
 .article-image > img {
-	border: 1px solid #a0a0a0;
 	border-radius: 6px;
 	width: 100%;
 }
 
 .article-image > span {
-	margin-top: 4px;
+	margin-top: 6px;
 	padding: 4px;
 	font-family: "Canva", sans-serif;
 	font-size: 14px;

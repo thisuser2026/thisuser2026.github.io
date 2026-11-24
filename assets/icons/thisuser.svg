@@ -1,12 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg id="svg5" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg" viewBox="0 0 92 64">
-  <!-- Generator: Adobe Illustrator 29.8.2, SVG Export Plug-In . SVG Version: 2.1.1 Build 3)  -->
-  <defs>
-    <style>
-      .st0 {
-        fill: #fff;
-      }
-    </style>
-  </defs>
-  <path class="st0" d="M0,0v64h92V0H0ZM84,56H8V8h76v48Z"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.9.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1"
+	 id="svg5" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 92 64"
+	 style="enable-background:new 0 0 92 64;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+</style>
+<path id="path16341" sodipodi:nodetypes="cccccccccccccccccccccccccccccc" class="st0" d="M44.006,8.003v8l-28.013-0.007v32L32,48
+	l4.001-7.999l-12.006-0.003v-16l20.007,0.003V48H52l0.006-23.997L68,24v24h7.998L76,16l-23.994,0.003v-8L84,8v48H8V8h28V0L0,0v64h92
+	V0H44L44.006,8.003z"/>
 </svg>

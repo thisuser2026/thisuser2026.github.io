@@ -81,7 +81,7 @@ const PROJECTS = {
 
 		images: {
 			base: "assets/media/renders/environments/panera/panera",
-			total: 8
+			total: 7
 		},
 
 		description: `
